@@ -18,9 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Junhyuk Kim
+title: "준의 직딩 <br>생존기"
 email: jkimpro10@gmail.com
-description: Samsung Electronics Data Engineer 
+description: >-
+  1993.09.13 <br>
+  Samsung Electronics <br>
+  Data ETL Engineer <br>
+
 
 # this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog
@@ -32,15 +36,16 @@ svg:
   optimize: true
 
 # Build settings
-# theme: 
-remote_theme: monokai
-highlighter-theme: monokai
+#theme: minima
+remote_theme: ejjoo/jeky
+highlighter-theme: monokai-subline
 date_format: "%Y-%M-%D"
 
 plugins:
 - jekyll-feed
 
 category_dir: category/
+tag_dir: tag/
 
 
 # Exclude from processing.
