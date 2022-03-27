@@ -37,7 +37,7 @@ svg:
 
 # Build settings
 #theme: minima
-remote_theme: ejjoo/jeky
+remote_theme: ejjoo/jekyll-theme-monos
 highlighter-theme: monokai-subline
 date_format: "%Y-%M-%D"
 
