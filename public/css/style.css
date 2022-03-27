@@ -1,12 +1,13 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
-@import url('https://fonts.googleapis.com/css?family=Gelasio|Kulim+Park|Nanum+Myeongjo|Nanum+Gothic|Noto+Sans|Noto+Sans+KR|Roboto&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Gelasio|Kulim+Park|Nanum+Myeongjo|Nanum+Gothic|Noto+Sans|Noto+Sans+KR|Roboto&display=swap);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,800,300);
 @import url(syntax/monokai.css);
 
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
-  --pink: #e83e8c;
+  --pink: #e83e8d28;
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
@@ -30,7 +31,7 @@
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: "Roboto", "Nanum Gothic";
-  --font-family-serif: "Nanum Myeongjo";
+  --font-family-serif: "Nanum Gothic";
 }
 
 * {
@@ -60,7 +61,7 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	/* text-decoration: underline; */
 }
 
 pre {
@@ -76,6 +77,20 @@ code {
 	font-family: "Menlo", "Consolas", monospace;
 	font-size: 0.8em;
 	margin: 0px;
+}
+
+.circle{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	background-image: url('./image.jpeg');
+	background-size : contain;
+	border:6px solid #fff;
+	box-shadow: 0 0 30px rgb(221,221,221);
+	-webkit-box-shadow: 0 0 30px rgb(221,221,221);
+	-moz-box-shadow: 0 0 30px rgb(221,221,221);
 }
 
 .container {
@@ -98,7 +113,9 @@ code {
 	flex: 0 0 220px;
 	padding: 15px;
 	z-index: 1;
-	background-color: #222;
+	/* background-color: #343a40; */
+	background-image: url('./Danbam.jpg');
+	background-position: contain;
 	color: #fff;
 }
 
@@ -113,13 +130,14 @@ code {
 
 .sidebar-brand > a {
 	font-size: 300%;
-	font-family: 'Gelasio';
+	font-family: 'Gothic';
 	color: #fff;
 }
 
 .lead {
 	font-size: 120%;
-	color: #aaa;
+	color: #b3bec9;
+	font-family: 'Noto Sans';
 }
 
 .sidebar-header {
@@ -135,14 +153,15 @@ code {
 	font-family: "Noto Sans";
 	text-transform: uppercase;
 	border-bottom: 1px solid gray;
-	margin-bottom: 5px;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 a.nav-item {
-	font-size: 120%;
+	font-size: 100%;
 	font-family: "Noto Sans";
 	text-transform: capitalize;
-	color: #aaa;
+	color: #b3bec9;
 }
 
 a.nav-item:hover { color: #777; }
@@ -290,7 +309,7 @@ footer {
 	margin-top: 80px;
 	font-size: 0.75em;
 	font-weight: lighter;
-	font-family: "Roboto";
+	font-family: "Noto Sans";
 	line-height: 1.5;
 }
 

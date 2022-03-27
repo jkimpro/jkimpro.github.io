@@ -56,20 +56,38 @@
 		</div>
 		<div class="content">
 			<article class="post">
-  <header class="post-header home">
-    <div class="post-title">Main Posts</div>
-  </header>
+	<header class="post-header home">
+		<div class="post-title">About Me<span id='category-name'></span></div>
+	</header>
 
-  <div class="post-content"><ul class="post-list"><li class="post-list-item">
-        <!----><span class="post-date">2022/03/27</span>
-      	<a class="post-link" href="/daily/2022/03/27/post1.html">
-    	    Test post!
-		</a></li></ul></div>
+	<div class="post-content">
+	</div>
 </article>
 
-
-
-</div>
+<script src="/public/js/jquery-3.4.1.slim.min.js"></script>
+<script>
+	function removeCategory() {
+		if (window.location.hash) {
+			let hash = window.location.hash.substring(1);
+			$('#category-name').text(hash.substring(0, 1).toUpperCase() + hash.substring(1));
+			let category_class = '.post-category-' + hash;
+			let items = $('.post-list-item').each((i, e) => {
+				if (!$(e).hasClass('post-category-' + hash)) {
+					$(e).hide();
+				} else {
+					$(e).show();
+				}
+			});
+		}
+	}
+	$(window).on('hashchange', () => {
+		removeCategory();
+	});
+	$(document).ready(() => {
+		removeCategory();	
+	})
+	
+</script>
 
 		</div>
 	</div>
