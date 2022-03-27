@@ -20,22 +20,22 @@
 
 title: Junhyuk Kim
 email: jkimpro10@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Data Engineer Jun's Space
+description: Samsung Electronics Data Engineer 
+# this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://jkimpro.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: jkimpro
 highlighter: rouge
 svg:
   optimize: true
+
 # Build settings
-# theme: minima
-highlighter-theme: monokai
-date_format: "%Y-%M-%D"
+  theme: minima
+  highlighter-theme: monokai
+  date_format: "%Y-%M-%D"
 plugins:
   - jekyll-feed
 category_dir: category/
-tag_dir: tag/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -44,15 +44,15 @@ tag_dir: tag/
 #
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
