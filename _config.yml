@@ -32,7 +32,7 @@ svg:
   optimize: true
 
 # Build settings
-# theme: minima
+# theme: 
 highlighter-theme: monokai
 date_format: "%Y-%M-%D"
 
