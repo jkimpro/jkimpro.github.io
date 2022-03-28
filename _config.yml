@@ -35,8 +35,8 @@ svg:
   optimize: true
 
 # Build settings
-#theme: minima
-remote_theme: ejjoo/jekyll-theme-monos
+# theme: monokai
+remote_theme: monokai
 highlighter-theme: monokai
 date_format: "%Y-%M-%D"
 
