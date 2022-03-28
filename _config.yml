@@ -32,9 +32,9 @@ svg:
   optimize: true
 
 # Build settings
-# # theme: minima
-# remote_theme : mmistakes/minimal-mistakes
-# minimal_mistakes_skin    : "default"
+# theme: minima
+remote_theme : mmistakes/minimal-mistakes
+minimal_mistakes_skin    : "default"
 highlighter-theme: monokai
 date_format: "%Y-%M-%D"
 plugins:
