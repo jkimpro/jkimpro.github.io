@@ -21,8 +21,9 @@
 title: "준의 직장 <br>생존기"
 email: jkimpro10@gmail.com
 description: >-
+  1993.09.13 <br>
   Samsung Electronics <br>
-  Data ETL  Engineer <br>
+  Data ETL Engineer <br>
 
 
 # this means to ignore newlines until "baseurl:"
@@ -36,8 +37,10 @@ svg:
 
 
 # Build settings
-# remote_theme: ejjoo/jekyll-theme-monos
-highlighter-theme: monokai
+
+#theme: minima
+remote_theme: ejjoo/jekyll-theme-monos
+highlighter-theme: monokai-subline
 date_format: "%Y-%M-%D"
 plugins:
   - jekyll-feed

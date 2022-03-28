@@ -32,8 +32,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Roboto", "Noto Sans KR";
-  --font-family-serif: "Noto Sans KR";
+  --font-family-sans-serif: "Roboto", "Nanum Gothic";
+  --font-family-serif: "Nanum Gothic";
 }
 
 * {
@@ -82,14 +82,13 @@ code {
 }
 
 .circle{
-	width: 170px;
-	height: 170px;
-	margin: 25px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
 	margin-bottom: 20px;
 	-webkit-border-radius:50%;
 	-moz-border-radius:50%;
-	background-image: url('../img/main_profile.jpeg');
+	background-image: url('./image.jpeg');
 	background-size : contain;
 	border:6px solid #fff;
 	box-shadow: 0 0 30px rgb(221,221,221);
@@ -153,7 +152,7 @@ code {
 }
 
 .nav-title {
-	font-size: 150%;
+	font-size: 100%;
 	font-family: "Noto Sans";
 	text-transform: uppercase;
 	border-bottom: 1px solid gray;
@@ -162,15 +161,13 @@ code {
 }
 
 a.nav-item {
-	font-size: 120%;
+	font-size: 100%;
 	font-family: "Noto Sans";
 	text-transform: capitalize;
 	color: #b3bec9;
 }
 
-a.nav-item:hover { 
-	color: #777;
-}
+a.nav-item:hover { color: #777; }
 
 .badge { font-size: 70%; }
 .badge::before { content: "("; }
@@ -290,7 +287,7 @@ header.home {
 	font-size: 1.5em;
 	color: #111;
 	font-weight: bold;
-	font-family: 'Noto Sans KR';
+	font-family: 'Noto Sans KR', sans-serif;
 	/* font-family: 'AppleSDGothicNeo';'' */
 }
 
