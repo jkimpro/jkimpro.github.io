@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "준의 직딩 <br>생존기"
+title: "준의 직장 <br>생존기"
 email: jkimpro10@gmail.com
 description: >-
   Samsung Electronics <br>
@@ -36,7 +36,7 @@ svg:
 
 # Build settings
 #theme: minima
-remote_theme: ejjoo/jekyll-theme-monos
+remote_theme: monokai
 highlighter-theme: monokai
 date_format: "%Y-%M-%D"
 
