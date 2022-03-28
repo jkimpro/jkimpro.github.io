@@ -32,14 +32,14 @@ svg:
   optimize: true
 
 # Build settings
-# theme: minima
-remote_theme: benbalter/retlab
+theme: minima
+remote_theme: minima
 highlighter-theme: monokai
 date_format: "%Y-%M-%D"
 # plugins:
 #   - jekyll-feed
 category_dir: category/
-tag_dir: tag/
+# tag_dir: tag/
 
 # this means to ignore newlines until "baseurl:"
 
