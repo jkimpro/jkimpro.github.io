@@ -1,0 +1,48 @@
+I"�<p>SK Telecom 고승범</p>
+
+<p><br /></p>
+
+<p>Kafka 의 어원 - 프란치 카프카의 어원을 가져왔고, 쓰기에 최적화 되었기 때문에 kafka 라고 명명함</p>
+
+<p><br />
+2012년 오픈소스로 공개됨, 현재 Confluent 사에서 kafka 와 관련 ecosystem들을 개발하는 중</p>
+
+<p><br /></p>
+
+<p>일반적인 Data transmission 이란, Source -&gt; destination 전달의 개념이다. 하지만 시스템이 고도화 됨으로서 각각의 destination과 source가 많아짐으로서 데이터의 복잡성이 증대, 정합성, 관리효율성이 떨어지게 되었는데, 이를 해결하기 위한 것이 kafka 이다. 구조자체를 단순화 하고, destination을 kafka로 통합 시키기 위하여 사용한다.
+<br /><br />
+Kafka의 장점으로는 Data의 장애, 변화, 재처리, 실시간 처리, 변화에 유연해진다는 점이다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Usecase
+- 다른 종류의 에코 시스템들과 연결하기 위한 메시지 버스로 사용
+- 실시간 파이프 라인과 배치 파이프라인
+- 다양한 경우를 위해 데이터 종류별로 Multiple 클러스터를 만들고 데이터 센터간 연결
+</code></pre></div></div>
+
+<p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="highlighter-rouge">YEAR</code> is a four-digit number, <code class="highlighter-rouge">MONTH</code> and <code class="highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+<h1 id="post-sample">post-sample</h1>
+<blockquote>
+  <p>hi!</p>
+</blockquote>
+
+<p>This is code</p>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">print</span> <span class="s1">'What the'</span>
+</code></pre></div></div>
+:ET
