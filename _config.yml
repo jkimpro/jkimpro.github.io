@@ -37,8 +37,7 @@ svg:
 # Build settings
 # theme: monokai
 # remote_theme: monokai
-svg:
-  optimize: true
+
 # Build settings
 remote_theme: ejjoo/jekyll-theme-monos
 highlighter-theme: monokai
