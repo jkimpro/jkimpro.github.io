@@ -32,12 +32,12 @@ svg:
   optimize: true
 
 # Build settings
-theme: minima
-remote_theme: minima
-highlighter-theme: monokai
+  theme: minima
+  remote_theme: minima
+  highlighter-theme: monokai
 date_format: "%Y-%M-%D"
-# plugins:
-#   - jekyll-feed
+plugins:
+  - jekyll-feed
 category_dir: category/
 # tag_dir: tag/
 
