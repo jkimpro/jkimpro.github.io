@@ -34,9 +34,6 @@ highlighter: rouge
 svg:
   optimize: true
 
-# Build settings
-# theme: monokai
-# remote_theme: monokai
 
 # Build settings
 # remote_theme: ejjoo/jekyll-theme-monos
@@ -45,7 +42,6 @@ date_format: "%Y-%M-%D"
 plugins:
   - jekyll-feed
 category_dir: category/
-
 # tag_dir: tag/
 
 # Exclude from processing.
