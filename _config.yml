@@ -36,7 +36,7 @@ svg:
 
 # Build settings
 #theme: minima
-remote_theme: minima
+remote_theme: monokai
 highlighter-theme: monokai
 date_format: "%Y-%M-%D"
 
