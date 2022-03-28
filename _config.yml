@@ -18,11 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "준의 직딩 <br>생존기"
+title: "준의 직장 <br>생존기"
 email: jkimpro10@gmail.com
 description: >-
+  1993.09.13 <br>
   Samsung Electronics <br>
-  Data ETL  Engineer <br>
+  Data ETL Engineer <br>
 
 
 # this means to ignore newlines until "baseurl:"
@@ -34,18 +35,17 @@ highlighter: rouge
 svg:
   optimize: true
 
+
 # Build settings
+
 #theme: minima
 remote_theme: ejjoo/jekyll-theme-monos
-highlighter-theme: monokai
+highlighter-theme: monokai-subline
 date_format: "%Y-%M-%D"
-
 plugins:
-- jekyll-feed
-
+  - jekyll-feed
 category_dir: category/
-tag_dir: tag/
-
+# tag_dir: tag/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,4 +53,16 @@ tag_dir: tag/
 # the internal "default list".
 #
 # Excluded items can be processed by explicitly listing the directories or
-# # their entries' file p
+# their entries' file path in the `include:` list.
+
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
