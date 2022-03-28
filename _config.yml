@@ -24,27 +24,28 @@ description: >-
   Samsung Electronics <br>
   Data ETL Engineer <br>
 
-
-# this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://jkimpro.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: jkimpro
-
 highlighter: rouge
 svg:
   optimize: true
 
-
 # Build settings
-
-#theme: minima
-remote_theme: jekyll-theme-monos
+# # theme: minima
+# remote_theme : mmistakes/minimal-mistakes
+# minimal_mistakes_skin    : "default"
 highlighter-theme: monokai
 date_format: "%Y-%M-%D"
 plugins:
   - jekyll-feed
 category_dir: category/
-# tag_dir: tag/
+tag_dir: tag/
+
+# this means to ignore newlines until "baseurl:"
+
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
