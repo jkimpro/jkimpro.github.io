@@ -33,12 +33,11 @@ svg:
 
 # Build settings
 # theme: minima
-remote_theme : mmistakes/minimal-mistakes
-minimal_mistakes_skin    : "default"
+remote_theme: benbalter/retlab
 highlighter-theme: monokai
 date_format: "%Y-%M-%D"
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
 category_dir: category/
 tag_dir: tag/
 
