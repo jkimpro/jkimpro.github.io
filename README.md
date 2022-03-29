@@ -1,3 +1,3 @@
 
-## Theme Monos
-> JKIMPRO BLOG
+## JKIMPRO BLOG
+> blog setup
