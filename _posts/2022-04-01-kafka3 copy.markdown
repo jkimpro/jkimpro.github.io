@@ -1,0 +1,52 @@
+---
+layout: post
+title:  "2019 IBM Dev. Apache Kafka 강의 정리 3편 (Consumer 편)"
+date:   2022-03-30 21:00:29 +0900
+categories: Apache-Kafka
+---
+
+SK Telecom 고승범
+
+# Kafka Producer
+
+Producer 란, 데이터 혹은 메시지를 브로커로 전송하는 역할을 하는 프로세스 <br/>
+
+# Ack 옵션 
+
+Ack = 0 빠른 전송, 메시지 손실 가능성 (0.29ms) 브로커 받았는지 안받았는지 모름 <br/>
+Ack = 1 빠른 전송, 약간의 메시지 손실 가능성 (1.05ms) 브로커가 받았는지 확인을 함 <br/>
+Ack = All 느린전송, 메시지 손실 없음 (2.05ms) -> 다른 follower가 받았는지 확인하는 것 <br/>
+
+
+# Producer 측에서 데이터 손실이 일어날수 있는 경우
+```
+ack를 던져주자 마자 브로커가 다운된 후 (kill 혹은 예기치 못한 down 현상) leader가 다른 leader로 선출이 되는데 Replication이 안되는 경우
+즉, 다른 broker 동기화가 이루어지지 않은 경우
+```
+따라서 많은 기업들은 Ack = 1 옵션을 채택하고 있으며, 고승범 님이 속한 조직 또한 Ack =1 옵션을 채택한다.
+
+<br/>
+
+# Producer 구조
+ ![Producer](/public/img/kafka/Producer.png)
+
+
+```
+Buffer.memory (프로듀서가 가지고 있음)
+Linger.ms (지연시간 만큼 대기했다가 send())
+```
+
+# Producer 튜닝
+Producer 는 메세지의 사이즈, 목적에 따라 적절한 튜닝이 필요하다.
+<br/>
+튜닝 예시
+
+|&nbsp;&nbsp;Throughput* 무조건 압축이 필요함&nbsp;&nbsp;|&nbsp;&nbsp;Latency - 압축할 시간조차 아까운 경우&nbsp;&nbsp;|&nbsp;&nbsp;Durability&nbsp;&nbsp;|
+|:----:|:---:|:---:|
+|batch.size -> increase|	linger.ms -> 0	|batch.size -> increase|
+|linger.size -> increase	|compression.type -> none	|linger.ms -> increase|
+|<span style="color:blue;font-weight:bold ">compression.type -> snappy,lz4</span>	|	acks -> 0	|acks -> all|
+
+<br/>
+durability 와 latency 중 어떤것을 더 중점적으로 할지는 Domain 스타일 별로 다르다. <br/>
+예를들어 금융 및 보안을 요하는 Domain 이라면 durability, 유통 및 신속성을 요하는 Domain 이라면 latency 중심으로 튜닝할 수 있지 않을까 예상해본다.<br/>
