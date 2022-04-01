@@ -13,7 +13,7 @@ Consumer 란, 데이터 혹은 메시지를 브로커로부터 꺼내오는 프�
 Topic 의 Partition 리더로 부터 메시지를 가져오며, Offset 순서로 가져온다. <br/>
 
 # Consumer 구조
-![Consumer](/public/img/kafka/Consumer.png)
+![consumer](/public/img/kafka/consumer.png)
 
 파티션 순서대로는 가져올 수 없지만, 각 파티션내의 offset 순서대로는 가져올수 있다.
 따라서 메세지에 timestamp를 추가하여서 consumer 측에서 정렬하는 것도 Kafka를 잘활용하는 방법 중 하나이다.
